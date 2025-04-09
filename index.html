@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Mehfil Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: radial-gradient(circle at top left, #1a1a2e, #16213e, #0f3460);
+            color: #f0f0f0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .header-text {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .header-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin: 0;
+            color: #ffd700;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .header-text p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        .director-img {
+            width: 100px;
+            height: 100px;
+            border-radius:500%;
+            object-fit: cover;
+            border:0px solid #ffd700;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.04);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+        }
+
+        section {
+            margin: 60px 0;
+        }
+
+        h2 {
+            color: #ffcc00;
+            font-size: 28px;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .gallery-img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            margin: 10px;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 25px rgba(255, 255, 255, 0.25);
+        }
+
+        .gallery-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.85);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .header-text h1 {
+                font-size: 28px;
+            }
+
+            .header-text p {
+                font-size: 12px;
+            }
+
+            ul li {
+                font-size: 16px;
+            }
+
+            .container {
+                padding: 20px 10px;
+            }
+
+            .gallery-img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Golden Mahfil Logo" class="logo">
+        <div class="header-text">
+            <h1>Golden Mehfil Restaurant</h1>
+            <div>
+                <p>Director: Aman Verma</p>
+                <p>Address: Budhanpur, Azamgarh</p>
+            </div>
+        </div>
+        <img src="director.jpg" alt="Director Aman Verma" class="director-img">
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to Golden Mehfil!</h2>
+            <p style="font-size: 18px; text-align: center; line-height: 1.8;">Experience the authentic taste of India in
+                the heart of Budhanpur, Azamgarh. From rich biryanis to decadent desserts, every dish is prepared with
+                love, tradition, and a touch of magic that brings people together over food.</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <ul>
+                <li>🍛 Chicken Biryani</li>
+                <li>🧀 Paneer Butter Masala</li>
+                <li>🫓 Garlic Naan</li>
+                <li>🍗 Butter Chicken</li>
+                <li>🍬 Gulab Jamun</li>
+                <li>🥘 Mutton Rogan Josh</li>
+                <li>🍤 Prawn Masala</li>
+                <li>🥗 Tandoori Salad</li>
+                <li>🥣 Dal Makhani</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-wrapper">
+                <img src="dish1.webp" alt="Dish 1" class="gallery-img">
+                <img src="dish2.jpg" alt="Dish 2" class="gallery-img">
+                <img src="dish3.jpg" alt="Dish 3" class="gallery-img">
+                <img src="dish4.avif" alt="Dish 4" class="gallery-img">
+                <img src="dish5.jpg" alt="Dish 5" class="gallery-img">
+                <img src="dish6.webp" alt="Dish 6" class="gallery-img">
+                <img src="dish7.jpg" alt="Dish 7" class="gallery-img">
+                <img src="dish8.jpg" alt="Dish 8" class="gallery-img">
+                <img src="dish9.jpg" alt="Dish 9" class="gallery-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p style="text-align: center; font-size: 18px;">📞 Phone: +91-8793772848</p>
+            <p style="text-align: center; font-size: 18px;">📍 Visit us: Budhanpur, Azamgarh, Uttar Pradesh, India</p>
+            <p style="text-align: center; font-size: 18px;">Follow us on Insta: golden_mahfil</p>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Golden Mahfil Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
